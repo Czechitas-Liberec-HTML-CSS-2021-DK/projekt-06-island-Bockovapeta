@@ -1,0 +1,103 @@
+*,::after,::before { box-sizing: border-box; }
+
+
+body {
+    margin: 0;
+    padding:0;
+    font-family: 'Merriweather', serif;
+    background-color: #f5f5f5;
+    font-size: 16px;
+    line-height: 1.6;
+
+}
+
+
+body p {
+    padding: 0 2rem;
+}
+h1 {
+    font-size: 50px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+          
+}
+
+h2 {
+    text-decoration: underline #629edb 6px;
+    padding: 0 2rem;
+  
+}
+
+img {
+    max-width: 100%;
+}
+
+/*hlavička*/
+
+.hlavicka {
+    padding: 2rem;
+    color: white;
+    text-align: center;
+    background-image: url(images/island-hlavicka.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.hlavicka p {
+    text-shadow: 5px 5px 10px #cadaca;
+}
+
+
+.autor {
+    color: rgb(238, 229, 229);
+    font-style: italic;
+    padding-top: 10px;
+}
+
+
+/*menu*/
+
+.menu {
+    text-align: center;
+    text-transform: uppercase;
+    list-style-type: none;
+    padding: 1rem 3rem;
+}
+
+.menu a {
+    color:rgb(173, 167, 167);
+    text-decoration: none;
+}
+
+.menu a:hover,
+.menu a:focus {
+    color: black;
+    font-weight: bolder;
+}
+
+.menu li {
+    border-bottom: 1px solid rgb(173, 167, 167);
+    padding: 1rem 0;
+}
+
+.fotka,
+.fotka a,
+.paticka,
+.paticka a {
+    color: rgb(173, 167, 167);
+    font-size: 10px;
+    text-align: center;
+}
+
+.fotogalerie img {
+    width: 100%;
+}
+
+/*patička*/
+
+.paticka {
+    background: linear-gradient(to bottom, rgb(231, 229, 229), white);
+    text-align: left;
+   
+}
+
