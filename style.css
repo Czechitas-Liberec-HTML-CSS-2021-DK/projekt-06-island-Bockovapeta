@@ -1,0 +1,301 @@
+*,::after,::before { box-sizing: border-box; }
+
+
+body {
+    margin: 0;
+    padding:0;
+    font-family: 'Merriweather', serif;
+    background-color: #f5f5f5;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+body p {
+    padding: 0 2rem;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;   
+}
+
+h2 {
+    padding: 0 2rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+.fotka,
+.fotka a,
+.popisek,
+.popisek a,
+.paticka,
+.paticka a {
+    color: rgb(155, 155, 155);
+    font-size: 10px;
+    text-align: center;
+}
+
+.fotogalerie img {
+    width: 100%;
+}
+
+
+.linka::after {
+    content: "";
+    background: rgb(58, 140, 207);
+    display: block;
+    height: 5px;
+    width: 90px;
+    position: relative;
+    right: 2rem;
+    margin-top: 1rem;
+}
+
+.autor::before {
+    content: "";
+    background: rgb(231, 229, 229);
+    display: block;
+    height: 1px;
+    width: 100px;
+    margin:auto;
+    margin-bottom: 1rem;
+}
+
+/*hlavička*/
+
+.hlavicka {
+    padding: 2rem;
+    color: white;
+    text-align: center;
+    background-image: url(images/island-hlavicka.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.hlavicka p {
+    text-shadow: 5px 5px 10px #cadaca;
+}
+
+
+.autor {
+    color: rgb(231, 229, 229);
+    font-style: italic;
+    padding-top: 10px;
+}
+
+/*menu*/
+
+.menu {
+    text-align: center;
+    text-transform: uppercase;
+    list-style-type: none;
+    padding: 1rem 3rem;
+}
+
+.menu a {
+    color:rgb(155, 155, 155);
+    text-decoration: none;
+}
+
+.menu a:hover,
+.menu a:focus {
+    color: black;
+    font-weight: bolder;
+}
+
+.menu li {
+    border-bottom: 1px solid rgb(153, 139, 139);
+    padding: 1rem 0;
+}
+
+/*patička*/
+
+.paticka {
+    background: linear-gradient(to bottom, rgb(231, 229, 229), white);
+    text-align: left;
+    padding-top:10px;
+}
+
+.paticka p {
+    margin:0;
+}
+
+/*verze pro tablet*/
+@media (min-width: 500px) and (max-width: 1000px) {
+
+        .menu {
+            display: flex;
+            justify-content: center;
+        }
+
+        .menu li {
+            border: none;
+            border-top:1px solid rgb(153, 139, 139);
+            border-bottom:1px solid rgb(153, 139, 139);
+        }
+
+        .menu li:nth-child(2),
+        .menu li:nth-child(3),
+        .menu li:nth-child(4) {
+            border-left: 1px solid rgb(153, 139, 139);;
+        }
+
+        .menu a {
+            margin: 0 1rem;
+            text-align: center;
+        }
+
+        .obrazek {
+            position: relative;
+        }
+
+        .obrazek .popisek {
+            right:0;
+            position: absolute;
+            bottom: 5px;
+            color: white;
+        }
+        
+        .obrazek a,
+        .fotka a {
+            color: white;
+        }
+
+
+        .foto {
+            position: relative;
+            width: 50%;
+            display: flex;
+        }
+
+        .kontejner {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .foto p {
+            position: absolute;
+            color: white;
+            bottom:0;
+            opacity: 0;
+        }
+
+        .telo {
+            background-color: white;
+        }
+
+        .fotka {
+            width: 100%;
+            height: 100%;
+            display: inline-block;
+            padding-top: 40%;
+            margin:0;
+        }
+
+        .fotka:hover {
+            transition: 1s;
+            transform: translate(10px 30px);
+            background-color: rgb(75, 59, 59);
+            opacity: 0.7;
+            font-size: 14px;
+        }
+    }
+
+/*verze pro PC*/
+@media (min-width:1001px) {
+
+        .telo {
+            width: 960px;
+            margin: -3rem auto;
+            background: white;
+        }
+
+        .autor {
+            margin: 2rem 0;
+        }
+
+        .menu {
+            text-align: left;
+            float: left;
+            height: 400px;
+        }
+
+        .uvod {
+            padding-top: 2rem;
+        }
+
+        .proc p {
+            padding-right: 200px;
+        }
+
+        .videt p,
+        .videt h2 {
+            padding-left: 200px;
+        }
+
+        .kontejner {
+            display: flex;
+            flex-wrap: wrap;
+            margin:0;
+            padding-top:10px;
+        }
+
+        .foto {
+            position: relative;
+            width: 33.33%;
+            display: flex;
+        }
+
+        .foto p {
+            position: absolute;
+            color: white;
+            bottom:0;
+            opacity: 0;
+        }
+
+        .obrazek {
+            position: relative;
+        }
+
+        .obrazek .popisek {
+            right:0;
+            position: absolute;
+            bottom: 5px;
+            color: white;
+            padding: 10px;
+            margin:0;
+        }
+            
+        .popisek a,
+        .fotka a {
+            color: white;
+        }
+            
+        .fotka {
+            width: 100%;
+            height: 100%;
+            display: inline-block;
+            padding-top: 40%;
+            margin:0;
+        }
+
+        .fotka:hover {
+            transition: 1s;
+            transform: translate(10px 30px);
+            background-color: rgb(75, 59, 59);
+            opacity: 0.7;
+            font-size: 14px;
+        }
+
+        .paticka {
+            width: 960px;
+            margin: auto;
+            padding-top: 50px;
+        }
+            
+    }
